@@ -2,12 +2,23 @@ body {
   max-width: 720px;
   margin: auto;
   font-size: 62.5%;
+  font-family: "Overpass Mono", monospace;
 }
 
-#pagetitle{
-  font-family: 'Zilla Slab Highlight', cursive;
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+}
+
+#pagetitle {
+  font-family: "Zilla Slab", monospace;
   font-size: 6em;
-  margin: auto;
+  color: #6fdca7;
+  margin: 0;
 }
 
 #matter {
@@ -21,15 +32,36 @@ body {
   max-height: 75vw;
 }
 
-#container {
+#links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
-  height: 80vh;
+  font-size: 2.5em;
+  margin: 10px;
 }
 
-@media screen and (max-width: 720px) {
+#links a{
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #555555;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #6fdca7;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #6fdca7;
+}
+
+@media screen and (max-width: 500px) {
   body {
     font-size: 50%;
   }
